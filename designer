@@ -1,0 +1,12 @@
+body{
+    margin: 0px;
+    flex-wrap: wrap;
+    align-content: center;
+}
+#produtos{
+    background-color: #fcd6c4;
+    flex-wrap: wrap;
+    display: flex;
+    align-content: center;
+    margin: 0px;
+}
