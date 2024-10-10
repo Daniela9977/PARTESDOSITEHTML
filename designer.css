@@ -1,12 +1,37 @@
-body{
-    margin: 0px;
-    flex-wrap: wrap;
-    align-content: center;
-}
-#produtos{
-    background-color: #fcd6c4;
-    flex-wrap: wrap;
+body {
+    background-image: url(fundo.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    font-family: 'Times New Roman', Times, serif;
     display: flex;
-    align-content: center;
-    margin: 0px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start; 
+    margin: 0;
+    padding: 0;
+}
+nav {
+    color: black;
+    padding: 10px;
+    width: 100%; 
+    text-align: center; 
+}
+nav a {
+    color: black;
+    padding: 10px;
+    text-decoration: none;
+}
+nav a:hover {
+    background-color: #575757;
+}
+.content {
+    margin-top: 20px;
+    text-align: center; 
+}
+.bolo-pote,
+.Cones,
+.brigadeiro-de-colher {
+    margin-top: 20px;
 }
