@@ -5,50 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Conic Doces</title>
     <link rel="stylesheet" href="designer.css">
-    <style>
-        body {
-            font-family: 'Times New Roman', Times, serif;
-        }
-        nav {
-            color: black;
-            padding: 10px;
-        }
-        nav a {
-            color: black;
-            padding: 10px;
-            text-decoration: none;
-        }
-        nav a:hover {
-            background-color: #575757;
-        }
-        .content {
-            margin-top: 20px;
-        }
-        .produtos {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-between;
-        }
-        .produto {
-            flex: 0 1 calc(33.33% - 20px); 
-            margin: 10px; 
-            text-align: center; /
-        }
-        img {
-            width: 100%; 
-            height: auto; 
-        }
-    </style>
 </head>
-<body>
+</body>
+<header class="header">
+    <div class="logo">
+        <span class="conic">Conic</span>
+    </div>
+    <div class="search-bar">
+        <input type="text" placeholder="Pesquisar...">
+        <button type="submit">🔍</button>
+    </div>
+    <nav class="nav-links">
+        <a href="#informacoes">Informações</a>
+        <a href="#contato">Contato</a>
+    </nav>
+</header>
+</body>
 
-<nav>
-    <a href="#infos">Informações</a>
-    <a href="#contato"> Contato</a>
-</nav>
-
-<div class="content" id="produtos">
-    <img src="capa.jpg" alt="logo" width="300">
+<div class="content" id="topo">
+    <img src="https://cdn.discordapp.com/attachments/1281681957583060992/1281682272973754368/Imagem_do_WhatsApp_de_2024-08-30_as_15.png?ex=67096e22&is=67081ca2&hm=0cec42cf0a773bce7bfca68043956e4fac28db197b6dca8b180764d5ebea5519&" />
     <p>🤎 | Doce como um sonho, irresistível como um desejo.</p>
     <p>🍫 | Delícias em bolos de pote, cones trufados e muito mais.</p>
     <h2>Produtos</h2>
@@ -63,104 +38,120 @@
     <div class="produto" id="bolo-de-pote2">
         <img src="bolo-surpresa de morango.jpeg" alt="Bolo de Pote Surpresa de Morango">
         <h3>Bolo de Pote - Surpresa de Morango</h3>
-        <p>Preço: R$ 12,00</p>
+        <p>Preço: <span class="preco">R$ 12,00</span></p>
     </div>
     <div class="produto" id="bolo-de-pote2">
         <img src="bolo cenoura.jpeg" alt="Bolo de Pote Cenoura com Brigadeiro">
         <h3>Bolo de Pote - Cenoura com Brigadeiro</h3>
-        <p>Preço: R$ 12,50</p>
+        <p>Preço: <span class="preco">R$ 12,50</span></p>
     </div>
     <div class="produto" id="bolo-de-pote2">
         <img src="bolo choconinho.jpeg" alt="Bolo de Pote ChocoNinho">
         <h3>Bolo de Pote - ChocoNinho</h3>
-        <p>Preço: R$ 12,50</p>
+        <p>Preço: <span class="preco">R$ 12,50</span></p>
     </div>
     <div class="produto" id="bolo-de-pote3">
         <img src="bolo de oreo.jpeg" alt="Bolo de Pote Oreo">
         <h3>Bolo de Pote - Oreo</h3>
-        <p>Preço: R$ 12,50</p>
+        <p>Preço: <span class="preco">R$ 12,50</span></p>
     </div>
     <div class="produto" id="bolo-de-pote3">
         <img src="bolo beijinho.jpeg" alt="Bolo de Pote Beijinho">
         <h3>Bolo de Pote - Beijinho</h3>
-        <p>Preço: R$ 12,00</p>
+        <p>Preço: <span class="preco">R$ 12,00</span></p>
     </div>
     <div class="produto" id="bolo-de-pote3">
         <img src="bolo de pretigio.jpeg" alt="Bolo de Pote Prestígio">
         <h3>Bolo de Pote - Prestígio</h3>
-        <p>Preço: R$ 12,00</p>
+        <p>Preço: <span class="preco">R$ 12,00</span></p>
     </div>
     <div class="produto" id="bolo-de-pote4">
         <img src="bolo pave de oreo.jpeg" alt="Bolo de Pote Pave de Oreo">
         <h3>Bolo de Pote - Pave de Oreo</h3>
-        <p>Preço: R$ 12,00</p>
+        <p>Preço: <span class="preco">R$ 12,00</span></p>
     </div>
     <div class="produto" id="bolo-de-pote4">
         <img src="bolodeuva.jpeg" alt="Bolo de Pote Surpresa de Uva">
         <h3>Bolo de Pote - Surpresa de Uva</h3>
-        <p>Preço: R$ 12,00</p>
+        <p>Preço: <span class="preco">R$ 12,00</span></p>
     </div>
     <div class="produto" id="Cones1">
         <img src="ninho com nutela1.jpeg" alt="Cone Ninho com Nutella">
         <h3>Cone - Ninho com Nutella </h3>
-        <p>Preço: R$ 8,50</p>
+        <p>Preço: <span class="preco">R$ 8,50</span></p>
     </div>
     <div class="produto" id="Cones1">
         <img src="ninho com nutela2.jpeg" alt="Cone Ninho com Nutella">
         <h3>Cone - Ninho com Nutella - Chocolate branco</h3>
-        <p>Preço: R$ 8,50</p>
+        <p>Preço: <span class="preco">R$ 8,50</span></p>
     </div>
     <div class="produto" id="Cones1">
         <img src="cone paçoca.jpeg" alt="Cone Paçoca">
         <h3>Cone - Paçoca</h3>
-        <p>Preço: R$ 8,50</p>
+        <p>Preço: <span class="preco">R$ 8,50</span></p>
     </div>
     <div class="produto" id="Cones2">
         <img src="cone ninho com confete.jpeg" alt="Cone Ninho com Confete">
         <h3>Cone - Ninho com Confete</h3>
-        <p>Preço: R$ 8,00</p>
+        <p>Preço: <span class="preco">R$ 8,00</span></p>
     </div>
     <div class="produto" id="Cones2">
         <img src="cone brigadeiro.jpeg" alt="Cone Brigadeiro">
         <h3>Cone - Brigadeiro</h3>
-        <p>Preço: R$ 8,00</p>
+        <p>Preço: <span class="preco">R$ 8,00</span></p>
     </div>
     <div class="produto" id="Cones2">
         <img src="cone oreo.jpeg" alt="Cone Oreo">
         <h3>Cone - Oreo</h3>
-        <p>Preço: R$ 8,50</p>
+        <p>Preço: <span class="preco">R$ 8,50</span></p>
     </div>
     <div class="produto" id="brigadeiro-de-colher">
-        <img src="brigadeiroColherDePaçoca.jpeg" alt="Brigadeiro de Colher - De Paçoca">
+        <img src="brigadeiroColherDePaçoca.jpeg" alt="Brigadeiro de Colher - Paçoca">
         <h3>Brigadeiro de colher - De Paçoca</h3>
-        <p>Preço: R$ 4,50</p>
+        <p>Preço: <span class="preco">R$ 4,50</span></p>
     </div>
-    <div class="produto" id="brigadeiro-de-colher">
-        <img src="brigadeiroColherNinhocomNutella.jpeg" alt="Brigadeiro de Colher - De Ninho Com Nutella">
+    <div class="produto" id="brigadeiro-de-colher2">
+        <img src="brigadeiroColherNinhocomNutella.jpeg" alt="Brigadeiro de Colher - Ninho Com Nutella">
         <h3>Brigadeiro de colher - De Ninho Com Nutella</h3>
-        <p>Preço: R$ 4,50</p>
+        <p>Preço: <span class="preco">R$ 4,50</span></p>
     </div>
 </div>
-
-<div class="content" id="infos">
-    <h2>iFood</h2>
-    <p>iFood: <a href="https://www.ifood.com.br/delivery/sao-paulo-sp/conic-doces-chacara-santa-maria/8083f1d7-13aa-4673-948c-de700bfe3458?utm_medium=share&fbclid=PAZXh0bgNhZW0CMTEAAaa8d6t9ZohTbNJb8SbTGfYfHDJR_eJ3uMdVTsb0GOTZ4F2__ZzH1XWhZwE_aem_io1z-R-c2Ny-KRNuU6ISwQ" target="_blank">clique aqui para ser direcionado para nossa pagina do iFood</a></p>
-</div>
-
-<div class="content" id="infos">
-    <h2>Endereço</h2>
-    <p>Endereço: Rua Luar do Sertao, 880 - Chacara Santa Maria. Sao Paulo - SP</p>
-</div>
-
-<div class="content" id="infos">
-    <h2>Instagram</h2>
-    <p>Siga-nos no Instagram: <a href="https://www.instagram.com/conicdoces" target="_blank">@conicdoces</a></p>
-</div>
-
-<div class="content" id="sobre">
-    <h2>Sobre</h2>
-    <p> Na Conic Doces, transformamos cada doce em uma experiência especial. Inspirados na delicadeza dos sonhos e na irresistibilidade dos desejos, oferecemos uma linha variada de produtos, como bolos de pote, cones trufados e outras delícias que fazem qualquer momento mais doce.
-        Nosso compromisso é trazer sabor e qualidade em cada receita, feitas com ingredientes selecionados e muito carinho. Seja para uma comemoração especial ou para adoçar o seu dia a dia, estamos aqui para surpreender você.</p>
+<div class="infos">
+    <div>
+        <h3>Endereço</h3>
+        <p>Rua Luar do Sertão, 880 - Chácara Santa Maria<br>São Paulo - SP</p>
+        <h3>Redes Sociais</h3>
+        <ul class="rede-social">
+            <li>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram" width="24">
+                <a href="https://www.instagram.com/conicdoces/" target="_blank">@conicdoces</a>
+            </li>
+            <li>
+                <img src="data:image/jpeg;base64,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" alt="iFood" width="24">
+                <a href="https://www.ifood.com.br/delivery/sao-paulo-sp/conic-doces-chacara-santa-maria/8083f1d7-13aa-4673-948c-de700bfe3458?utm_medium=share" target="_blank">iFood</a>
+            </li>
+        </ul>
+        
+        <p class="atencao">Atenção: Os valores no iFood podem ser mais altos devido à taxa de serviço aplicada pela plataforma.</p>
+    </div>
+    <div>
+        <h3>Horário de Entrega</h3>
+        <p>Seg - Sáb: 11:00 às 23:59</p>
+        <p>Domingo: 10:00 às 15:00 - 18:00 às 23:30</p>
+        <h3>Formas de pagamento</h3>
+        <ul>
+            <li>📱 PIX</li>
+            <li>💳 Cartão</li>
+            <li>💵 Dinheiro</li>
+        </ul>
+        <h3>CONTATO</h3>
+        <p class="contato">📞 (11) 96582-3370</p>
+    </div>
+    <div>
+        <h3>Sobre</h3>
+        <p>Na Conic Doces, transformamos cada doce em uma experiência especial. Inspirados na delicadeza dos sonhos e na irresistibilidade dos desejos, oferecemos uma linha variada de produtos, como bolos de pote, cones trufados e outras delícias que fazem qualquer momento mais doce.</p>
+        <p>Nosso compromisso é trazer sabor e qualidade em cada receita, feitas com ingredientes selecionados e muito carinho. Seja para uma comemoração especial ou para adoçar o seu dia a dia, estamos aqui para surpreender você.</p>
+    </div>
 </div>
 
 </body>
