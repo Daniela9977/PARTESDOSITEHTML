@@ -1,37 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Halimum&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 body {
-    background-image: url(fundo.jpg);
+    font-family: 'Montserrat', sans-serif;
+    background-color: #fddcc8;
+    background-image: url(Tela-Fundo.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
     background-attachment: fixed;
-    font-family: 'Times New Roman', Times, serif;
     display: flex;
     flex-direction: column;
+}
+.header {
+    display: flex;
     align-items: center;
-    justify-content: flex-start; 
-    margin: 0;
-    padding: 0;
+    justify-content: space-between;
+    background-color: #f3b391;
+    padding: 20px;
+}
+
+.logo {
+    font-family: 'Halimum', sans-serif;
+    font-size: 36px;
+    color: #662b04;
+}
+.search-bar {
+    display: flex;
+    align-items: center;
+}
+.search-bar input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    outline: none;
+    font-size: 16px;
+}
+.search-bar button {
+    background: none;
+    border: none;
+    font-size: 18px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+.nav-links a {
+    margin-left: 20px;
+    text-decoration: none;
+    font-size: 18px;
+    color: #662b04;
+}
+
+.nav-links a:hover {
+    text-decoration: underline;
 }
 nav {
     color: black;
     padding: 10px;
-    width: 100%; 
-    text-align: center; 
+    width: 100%;
+    text-align: right;
 }
+
 nav a {
     color: black;
     padding: 10px;
     text-decoration: none;
 }
+
 nav a:hover {
     background-color: #575757;
 }
 .content {
     margin-top: 20px;
-    text-align: center; 
+    text-align: center;
 }
-.bolo-pote,
-.Cones,
-.brigadeiro-de-colher {
-    margin-top: 20px;
+.produtos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.produto {
+    flex: 1 1 300px;
+    margin: 10px;
+    text-align: center;
+}
+
+img {
+    width: 200px;
+    height: auto;
+}
+.infos {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    padding: 20px;
+    background-color: #fde5cc;
+    border-top: 5px solid #dcb18e;
+}
+
+.infos div {
+    padding: 10px;
+}
+
+.infos h3 {
+    color: #d97a40;
+    margin-bottom: 10px;
+}
+
+.infos p,
+.footer li {
+    margin: 5px 0;
+}
+
+.infos ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.infos a {
+    color: #d97a40;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.infos a:hover {
+    text-decoration: underline;
+}
+
+.infos .contato {
+    font-size: 1.2em;
+    color: #41b24a;
+}
+
+.infos .rede-social img {
+    width: 24px;
+    margin-right: 10px;
+}
+
+.infos .atencao {
+    font-size: 0.9em;
+    color: #cc3300;
+}
+
+.rede-social a {
+    color: black;
+}
+
+.produto .preco {
+    background-color: #f4a460;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 10px;
+    font-weight: bold;
+    display: inline-block;
 }
