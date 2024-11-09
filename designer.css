@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Halimum&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
 * {
     margin: 0;
@@ -6,57 +6,54 @@
     box-sizing: border-box;
 }
 body {
-    font-family: 'Montserrat', sans-serif;
+    font-family: "Poppins", sans-serif;
     background-color: #fddcc8;
-    background-image: url(Tela-Fundo.jpg);
+    background-image: none;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
     background-attachment: fixed;
     display: flex;
     flex-direction: column;
+    margin-top: 70px; /* Ajuste para que o conteúdo não fique sobre a barra */
 }
 .header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: #f3b391;
-    padding: 20px;
+    padding: 10px 20px; /* Reduzido o padding para diminuir a altura da barra */
+    background-color: rgba(243, 179, 145, 0.8); /* Transparência inicial */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    transition: background-color 0.3s ease-out, opacity 0.3s ease-out; /* Animação para transições */
+    backdrop-filter: blur(8px); /* Desfoque para maior visibilidade */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Sombra sutil para destacar a barra */
 }
 
 .logo {
-    font-family: 'Halimum', sans-serif;
-    font-size: 36px;
+    font-size: 36px; /* Tamanho ajustado da logo */
     color: #662b04;
+    font-family: 'Satisfy', cursive; /* Fonte personalizada */
 }
-.search-bar {
-    display: flex;
-    align-items: center;
+/* Aplica a fonte Satisfy apenas ao texto "Conic" */
+.conic {
+    font-family: 'Satisfy', cursive;
 }
-.search-bar input {
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 20px;
-    outline: none;
-    font-size: 16px;
-}
-.search-bar button {
-    background: none;
-    border: none;
-    font-size: 18px;
-    margin-left: 10px;
-    cursor: pointer;
-}
+
 .nav-links a {
-    margin-left: 20px;
     text-decoration: none;
-    font-size: 18px;
+    font-size: 16px; /* Tamanho do texto ajustado */
     color: #662b04;
+    margin-left: 15px; /* Menor espaçamento entre os links */
 }
 
 .nav-links a:hover {
     text-decoration: underline;
 }
+
 nav {
     color: black;
     padding: 10px;
@@ -73,10 +70,12 @@ nav a {
 nav a:hover {
     background-color: #575757;
 }
+
 .content {
     margin-top: 20px;
     text-align: center;
 }
+
 .produtos {
     display: flex;
     flex-wrap: wrap;
@@ -93,6 +92,7 @@ img {
     width: 200px;
     height: auto;
 }
+
 .infos {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
