@@ -1,11 +1,10 @@
-/* Importa a fonte Satisfy */
 @import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
 
 #home {
     display: flex;
     min-height: calc(100vh - 91px);
     position: relative;
-	background-color: #fddcc8; /* Cor de fundo definida */
+	background-color: #fddcc8;
 }
 
 #cta {
@@ -81,8 +80,6 @@
     right: 0;
     z-index: 1;
 }
-
-/* Aplica a fonte Satisfy ao nav_logo */
 #nav_logo {
     font-family: 'Satisfy', cursive;
     color: #662b04;
