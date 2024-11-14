@@ -15,39 +15,38 @@ body {
     background-attachment: fixed;
     display: flex;
     flex-direction: column;
-    margin-top: 70px; /* Ajuste para que o conteúdo não fique sobre a barra */
+    margin-top: 70px;
 }
 .header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 10px 20px; /* Reduzido o padding para diminuir a altura da barra */
-    background-color: rgba(243, 179, 145, 0.8); /* Transparência inicial */
+    padding: 10px 20px;
+    background-color: rgba(243, 179, 145, 0.8);
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     z-index: 1000;
-    transition: background-color 0.3s ease-out, opacity 0.3s ease-out; /* Animação para transições */
-    backdrop-filter: blur(8px); /* Desfoque para maior visibilidade */
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Sombra sutil para destacar a barra */
+    transition: background-color 0.3s ease-out, opacity 0.3s ease-out;
+    backdrop-filter: blur(8px);
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .logo {
-    font-size: 36px; /* Tamanho ajustado da logo */
+    font-size: 36px;
     color: #662b04;
-    font-family: 'Satisfy', cursive; /* Fonte personalizada */
+    font-family: 'Satisfy', cursive;
 }
-/* Aplica a fonte Satisfy apenas ao texto "Conic" */
 .conic {
     font-family: 'Satisfy', cursive;
 }
 
 .nav-links a {
     text-decoration: none;
-    font-size: 16px; /* Tamanho do texto ajustado */
+    font-size: 16px;
     color: #662b04;
-    margin-left: 15px; /* Menor espaçamento entre os links */
+    margin-left: 15px;
 }
 
 .nav-links a:hover {
